@@ -17,19 +17,23 @@ public class Temperature {
 		double total = 0.0;
 		
 		for (; days < n; days++){
-			System.out.println("Day " + days);
+			total = 0.0;
+			System.out.println("Day " + days);			
 			for (int index = 0; index < n; index ++){
+				
 				array [count]= rand.nextInt((80-60) + 1) + 60;
 				System.out.println(array[count]);
 				total += array[count];
+//				System.out.println("in loop total: " + total);
 				count++;
 			}
 			System.out.println(total);
-			if (days < 1){
-				dayArr[days] = total;
-			}else{
-				dayArr[days] = total - dayArr[days-1];
-			}
+			dayArr[days] = total;
+//			if (days < 1){
+//				dayArr[days] = total;
+//			}else{
+//				dayArr[days] = total - dayArr[days-1];
+//			}
 			
 		}
 		System.out.println("Total days " + (n));
