@@ -38,7 +38,7 @@ def wake_up():
     if action == "door":
         door()
 
-起きる()
+wake_up()
 
 
 
